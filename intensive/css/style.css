@@ -6,7 +6,8 @@
   color:#fff;
 }
 .header{
-  height: 800px;
+  min-height: 800px;
+  padding-bottom: 15px;
   background: url('../img/bg/first_bg.jpg') center center/cover no-repeat;
   text-align: center;
 
@@ -224,13 +225,4 @@
   margin-top: 10px;
   font-size: 15px;
   font-weight: 300;;
-}
-
-.ab{
-  width: 100px;
-  height: 50px;
-  background-color: black;
-  margin: 0 auto 15px;
-  padding:10px
-  
 }
