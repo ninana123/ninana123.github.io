@@ -1,8 +1,8 @@
 window.addEventListener('DOMContentLoaded', () => {
 
 	const btns = document.querySelectorAll('.btn'),
-		btnSend = btns.querySelector('.btn_send'),
-		btnCancel = btns.querySelector('.btn_cancel'),
+		btnSend = document.querySelector('.btn_send'),
+		btnCancel = document.querySelector('.btn_cancel'),
 
 		menu = document.querySelector('.menu'),
 		menuLink = menu.querySelectorAll('.menu_link'),
