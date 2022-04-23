@@ -1,0 +1,31 @@
+.btn
+	width: 259px
+	height: 63px
+	box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12)
+	background-image: linear-gradient(to top, $COLOR_2 0%, #4ce2ff 100%)
+	display: block
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
+	color: $COLOR_1
+	font-size: 18px
+	font-weight: 400
+	text-transform: uppercase
+	border: none
+	border-radius: 4px
+	@include btn_hover
+	&:focus
+		outline: none
+	&_mini
+		box-shadow: inset 0px -3px 0 0 rgba(0, 0, 0, 0.12)
+		background-image: linear-gradient(to top, $COLOR_2, #4ce2ff)
+		font-size: 14px
+		color: $COLOR_1
+		max-width: 172px
+		width: 100%
+		height: 46px
+	&_send, &_cancel
+		width: 45%
+		height: 45px
+		background-image: none
+		background-color: #3e4448
+		&:hover
+			background-color: #3e4448

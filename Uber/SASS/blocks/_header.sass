@@ -1,0 +1,55 @@
+.header
+	position: relative
+	& .hamburder
+		display: none
+	nav
+		position: fixed
+		width: 100%
+		display: flex
+		height: 50px
+		background-color: #212121
+		align-items: center
+		z-index: 1003
+	.menu
+		padding: 0 70px
+		display: flex
+		justify-content: space-between
+		list-style: none
+		margin: 0
+		&_link
+			color: $COLOR_1
+			font-size: 15px
+			font-weight: 300
+
+		&_item
+			border-right: black dotted 2px
+			padding-right: 28px
+			&:last-child
+				border-right: none
+
+	.subheader
+		height: 84px
+		background-color: rgba(0, 0, 0, 0.6)
+		display: flex
+		align-items: center
+		position: absolute
+		width: 100%
+		margin-top: 50px
+		&_official
+			opacity: 0.5
+			font-size: 13px
+			font-weight: 400
+			color: rgba(255, 255, 255, 0.5)
+
+		&_call
+			font-size: 12px
+			font-weight: 300
+			text-align: right
+			color: $COLOR_1
+
+		&_phone
+			font-weight: 400
+			font-size: 22px
+			color: $COLOR_1
+		& .xs-visible
+			display: none

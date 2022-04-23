@@ -1,0 +1,51 @@
+.footer
+	padding: 52px 23px 39px
+	min-height: 156px
+	position: relative
+	&::before
+		content: ''
+		display: block
+		height: 4px
+		width: 299px
+		background-color: #1fbad6
+		position: absolute
+		top: 14px
+		left: 50%
+		transform: translate(-50%)
+	&_block
+		display: flex
+		justify-content: space-between
+		& > div
+			width: 33%
+			&:nth-child(3)
+				display: flex
+				justify-content: flex-end
+	&_messenger
+		display: flex
+	&_round
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 32px
+		height: 32px
+		background-color: #070716
+		border-radius: 50%
+		margin-right: 10px
+		&:last-child
+			margin: 0
+	&_navigate
+		display: flex
+		justify-content: center
+		align-items: center
+		& a
+			color: #070716
+			font-size: 15px
+			font-weight: 400
+			text-transform: uppercase
+			margin-right: 47px
+			&:last-child
+				margin: 0
+	&_apps a
+		margin-right: 10px
+		&:last-child
+			margin: 0

@@ -1,0 +1,47 @@
+.conditions
+	min-height: 919px
+	padding: 68px 0 86px 0
+	&_block
+		margin: 33px 0
+		&.warning
+			.conditions_title
+				color: red
+		&.warning
+			.conditions_list
+				&	li::before
+					content: ''
+					position: absolute
+					left: -32px
+					top: 3px
+					background: url('../icons/check/check_red.svg')
+					width: 21px
+					height: 20px
+	.block
+		&_nmb
+			margin-bottom: 0px
+	&_title
+		font-size: 22px
+		color: #1ca8c3
+		font-weight: 400
+	&_list
+		list-style-type: none
+		color: #222222
+		padding-left: 50px
+		margin-top: 22px
+		& li
+			font-size: 17px
+			font-weight: 300
+			margin-bottom: 10px
+			position: relative
+			&::before
+				content: ''
+				position: absolute
+				left: -32px
+				top: 3px
+				background: url('../icons/check/check_blue.svg')
+				width: 21px
+				height: 20px
+	&_descr
+		color: #1ca8c3
+		font-weight: 400
+		font-size: 16px
