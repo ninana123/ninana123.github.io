@@ -1,0 +1,164 @@
+.catalog {
+
+	&__title {
+		font-weight: 400;
+	}
+
+	&__tab {
+		margin-top: 46px;
+	}
+
+	&__product {
+		margin-top: 46px;
+	}
+}
+
+.container {}
+
+.tab {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	justify-content: center;
+
+	&__item {
+		min-width: 200px;
+		height: 50px;
+		padding: 0 20px;
+		border: 2px solid #D0D0D0;
+		transform: skewX(-20deg);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-right: 10px;
+		color: #6B6B6B;
+	}
+
+	&__item_active {
+		background: $COLOR_R;
+		color: $COLOR_W;
+	}
+
+	&__item-category {
+		transform: skewX(20deg);
+		font-weight: 400;
+		font-size: 18px;
+		text-transform: uppercase;
+
+	}
+}
+
+.product {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	&__block {
+		padding: 20px 27px;
+		background: $COLOR_W;
+		border: 2px solid #E8E8E8;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		min-width: 303px;
+		margin: 19px 0 0 0;
+	}
+
+	&__content {}
+
+	&__img {
+		display: block;
+		max-width: 140px;
+		margin: 0 auto;
+	}
+
+	&__name {
+		font-weight: 700;
+		font-size: 16px;
+		text-align: center;
+		color: $COLOR_B;
+		margin-top: 15px;
+	}
+
+	&__descr {
+		font-weight: 300;
+		font-size: 14px;
+		color: $COLOR_B;
+		max-width: 250px;
+		margin: 15px auto 0;
+		text-align: center;
+	}
+
+	&__link {
+		font-weight: 500;
+		display: block;
+		font-size: 14px;
+		text-align: center;
+		text-decoration-line: underline;
+		text-transform: uppercase;
+		color: $COLOR_R;
+		margin-top: 10px;
+	}
+
+	&__info {
+		display: none;
+
+		&_hidden {}
+	}
+
+	&__info-list {
+		list-style: none;
+		max-width: 251px;
+		padding: 0;
+	}
+
+	&__info-item {
+		font-weight: 300;
+		font-size: 14px;
+		color: #555555;
+		position: relative;
+		padding-left: 11.5px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			width: 5px;
+			height: 5px;
+			background: $COLOR_R;
+			left: 0;
+			top: 8px;
+		}
+	}
+
+	&__footer {
+		border-top: 1px solid #E8E8E8;
+		margin: 17px auto 0;
+		display: flex;
+		align-items: center;
+		padding: 18px 0 20px 0;
+	}
+
+	&__price {
+		margin-right: 20px;
+	}
+
+	&__old-price {
+		text-decoration-line: line-through;
+		font-weight: 300;
+		font-size: 14px;
+		color: #555555;
+	}
+
+	&__discount-price {
+		font-weight: 700;
+		font-size: 20px;
+		color: #050505;
+	}
+
+	&__btn {
+		width: 135px;
+		height: 44px;
+	}
+}
+
+.btn {}

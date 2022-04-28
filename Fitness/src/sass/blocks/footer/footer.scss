@@ -1,0 +1,51 @@
+.footer {
+	position: relative;
+
+	&__info {
+		padding: 50px 0 56px 0;
+		width: 460px;
+		background: #C70101;
+		position: absolute;
+		z-index: 2;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	&__address {
+		font-weight: 500;
+		font-size: 20px;
+		text-align: center;
+		color: $COLOR_W;
+	}
+
+	&__phone {
+		margin-top: 36px;
+		font-weight: 700;
+		font-size: 20px;
+		text-align: center;
+		text-decoration: none;
+		color: $COLOR_W;
+		display: block;
+	}
+
+	&__wrapper {
+		display: flex;
+		justify-content: center;
+		margin: 36px auto 0;
+	}
+
+	&__messenger {
+		width: 53px;
+		height: 52px;
+		border: 2px solid #FFFFFF;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-right: 27px;
+	}
+
+	&__icon {}
+
+	&__map {}
+}
