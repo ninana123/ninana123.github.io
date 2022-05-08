@@ -8,6 +8,14 @@
 		color: $COLOR_W;
 		max-width: 799px;
 		width: 100%;
+
+		@media(max-width:$screen-lg) {
+			font-size: 34px;
+		}
+
+		@media(max-width:$screen-md) {
+			font-size: 21px;
+		}
 	}
 
 	&__descr {
@@ -15,9 +23,13 @@
 		font-size: 20px;
 		color: $COLOR_W;
 		max-width: 426px;
+
+		@media(max-width:$screen-lg) {
+			font-size: 18px;
+		}
 	}
 
-	&__advice-form {
+	&__form {
 		max-width: 303px;
 		display: flex;
 		flex-direction: column;
@@ -25,11 +37,12 @@
 	}
 }
 
-.advice-form {
+.form {
 	&__input {
 		padding: 0 20px;
 		height: 54px;
 		margin-bottom: 11.5px;
+		width: 100%;
 
 		&:nth-child(3) {
 			margin-bottom: 19px;
@@ -38,5 +51,10 @@
 
 	&__btn {
 		height: 55px;
+		width: 100%;
+
+		@media(max-width:$screen-md) {
+			font-size: 16px;
+		}
 	}
 }

@@ -3,7 +3,8 @@
 
 	&__info {
 		padding: 50px 0 56px 0;
-		width: 460px;
+		max-width: 460px;
+		width: 100%;
 		background: #C70101;
 		position: absolute;
 		z-index: 2;
@@ -16,6 +17,10 @@
 		font-size: 20px;
 		text-align: center;
 		color: $COLOR_W;
+
+		@media(max-width:$screen-md) {
+			font-size: 18px;
+		}
 	}
 
 	&__phone {
@@ -26,12 +31,21 @@
 		text-decoration: none;
 		color: $COLOR_W;
 		display: block;
+
+		@media(max-width:$screen-md) {
+			font-size: 18px;
+			margin-top: 15px;
+		}
 	}
 
 	&__wrapper {
 		display: flex;
 		justify-content: center;
-		margin: 36px auto 0;
+		margin-top: 36px;
+
+		@media(max-width:$screen-md) {
+			margin-top: 25px;
+		}
 	}
 
 	&__messenger {
@@ -43,6 +57,7 @@
 		align-items: center;
 		justify-content: center;
 		margin-right: 27px;
+		cursor: pointer;
 	}
 
 	&__icon {}

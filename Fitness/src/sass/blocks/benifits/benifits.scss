@@ -4,7 +4,7 @@
 	&__service {
 		margin-top: 60px;
 
-		@media(max-width:$screen-sm) {
+		@media(max-width:$screen-md) {
 			margin-top: 0px;
 		}
 	}
@@ -16,7 +16,7 @@
 	text-align: center;
 	text-transform: uppercase;
 
-	@media(max-width:$screen-sm) {
+	@media(max-width:$screen-md) {
 		font-size: 23px;
 	}
 }
@@ -26,8 +26,9 @@
 	justify-content: space-between;
 
 
-	@media(max-width:$screen-sm) {
+	@media(max-width:$screen-md) {
 		flex-direction: column;
+		align-items: center;
 	}
 
 	&__item {
@@ -35,10 +36,14 @@
 		flex-direction: column;
 		align-items: center;
 		max-width: 269px;
+
+		@media(max-width:$screen-lg) {
+			max-width: 220px;
+		}
 	}
 
 	&__icon {
-		@media(max-width:$screen-sm) {
+		@media(max-width:$screen-md) {
 			order: 2;
 			margin-top: 10px;
 		}
@@ -50,7 +55,11 @@
 		font-size: 18px;
 		margin-top: 35px;
 
-		@media(max-width:$screen-sm) {
+		@media(max-width:$screen-md) {
+			margin-top: 20px;
+		}
+
+		@media(max-width:$screen-md) {
 			order: 1;
 		}
 	}
@@ -62,10 +71,14 @@
 		color: $COLOR_B;
 		text-align: center;
 
-		@media(max-width:$screen-sm) {
-			order: 3;
-			margin-top: 10px;
+		@media(max-width:$screen-lg) {
 			font-size: 13px;
+			margin-top: 10px;
+		}
+
+
+		@media(max-width:$screen-md) {
+			order: 3;
 		}
 	}
 

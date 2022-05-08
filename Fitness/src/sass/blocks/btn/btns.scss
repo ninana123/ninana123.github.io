@@ -5,4 +5,11 @@
 	color: $COLOR_W;
 	background: $COLOR_R;
 	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+
+	&:hover {
+		background-color: #ff1515
+	}
+
 }

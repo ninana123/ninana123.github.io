@@ -1,0 +1,22 @@
+.container {
+	max-width: 944px;
+	margin: 0 auto;
+	width: 100%;
+
+	@media(max-width:$screen-xl) {}
+
+	@media(max-width:$screen-lg) {
+		max-width: 720px;
+	}
+
+	@media(max-width:$screen-md) {
+		max-width: 540px;
+	}
+
+	@media(max-width:$screen-xl) {
+		width: 100%;
+		padding: 0 15px;
+	}
+
+
+}
