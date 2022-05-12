@@ -1,1 +1,1 @@
-window.addEventListener("DOMContentLoaded",()=>{});
+window.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector(".header__hamburger");menu=document.querySelector(".header__menu"),e.addEventListener("click",t=>{e.classList.toggle("header__hamburger_active"),menu.classList.toggle("header__menu_active")}),document.querySelectorAll(".header__menu-item").forEach(e=>{e.addEventListener("click",e=>{console.log(e.target.querySelector(".header__submenu")),e.target.querySelector(".header__submenu").classList.toggle("header__submenu_active")})})});
