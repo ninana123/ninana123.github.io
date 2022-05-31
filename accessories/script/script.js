@@ -142,7 +142,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	document.querySelector('.create').addEventListener('click', () => {
 		registration.classList.toggle('registration_active')
 	})
-	document.querySelector('.clear').addEventListener('click', () => {
+	document.querySelector('.clear').addEventListener('click', (e) => {
+		e.preventDefault()
 		registration.reset();
 
 	})
