@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Аксессуары для дома</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style/iconsfont.css">
+	<link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__body">
+				<div class="header__text">Резонанс</div>
+				<nav class="header__menu">
+					<ul class="header__list">
+						<li class="header__item"><a href="#" class="header__link">Каталог</a></li>
+						<li class="header__item"><a href="#" class="header__link">О нас</a></li>
+						<li class="header__item"><a href="#" class="header__link">Доставка</a></li>
+						<li class="header__item"><a href="#" class="header__link">Контакты</a></li>
+					</ul>
+				</nav>
+				<a href="tel:+79274442405" class="header__link header__phone">+7 9274442405</a>
+				<div class="header__messenger">
+					<a target="_blank" href="https://vk.com/asu00000" class="header__link"><img src="icons/vk.svg"
+							class="header__icon icon-vk" alt="vk"></a>
+					<a href="https://web.telegram.org/z/#1060355769" target="_blank" class="header__link header__icon
+						icon-telegram"><img src="icons/telegram.svg" class="header__icon icon-vk" alt="telegram"></a>
+				</div>
+				<div class="header__languages">
+					<a href="#" class="header__language header__link">Русский</a>
+					<a href="#" class="header__language header__link">English</a>
+				</div>
+				<div class="header__registration">Регистрация</div>
+			</div>
+		</div>
+	</header>
+
+	<form class="registration">
+		<div class="registration__title">Регистрация нового пользователя</div>
+		<div class="registration__body">
+			<div class="registration__subtitle">Персональная информация</div>
+			<div class="registration__item">
+				<label for="name" class="registration__label">Имя</label>
+				<input type="text" class="registration__input">
+			</div>
+			<div class="registration__item">
+				<label for="email" class="registration__label">E-mail</label>
+				<input type="text" class="registration__input">
+			</div>
+			<div class="registration__item">
+				<label for="password" class="registration__label">Пароль</label>
+				<input type="text" class="registration__input">
+			</div>
+			<div class="registration__btns">
+				<button class="registration__btn create">Создать</button>
+				<button class="registration__btn clear">Очистить</button>
+			</div>
+		</div>
+	</form>
+
+	<section class="illustrations">
+		<img src="img/interior.jpg" class="illustrations__img" alt="interior">
+	</section>
+
+	<section class="catalog">
+		<h1 class="catalog__title">Украшения и аксессуары для дома, которые приносят радость.</h1>
+		<div class="catalog__wrapper">
+			<div class="catalog__filter">
+				<div class="catalog__filter-category catalog__filter-category_active" data-category="all">Все</div>
+				<div class="catalog__filter-category" data-category="clock">Часы</div>
+				<div class="catalog__filter-category" data-category="house">Дом</div>
+				<div class="catalog__filter-category" data-category="accessories">Аксессуары</div>
+			</div>
+			<div class="catalog__products">
+			</div>
+		</div>
+	</section>
+
+	<footer class="contacts">
+		<a href="tel:79274442405" class="contacts__link contacts__phone">+7 9274442405</a>
+		<a href="mailto:alsu13dam@gmail.com" class="contacts__link contacts__email">alsu13dam@gmail.com</a>
+		<address class="contacts__address">ул. Восстания, д. 22, кв.36<br>г.Казань</address>
+		<div class="contacts__text">Доставка по всей России</div>
+		<div class="contacts__messenger">
+			<a href="#" class="contacts__icon"><img src="icons/facebook.png" alt="facebook"></a>
+			<a href="#" class="contacts__icon"><img src="icons/twitter.png" alt="twitter"></a>
+			<a href="#" class="contacts__icon"><img src="icons/instagram.png" alt="instagram"></a>
+		</div>
+	</footer>
+
+	<script src="script/script.js"></script>
+</body>
+
+</html>
