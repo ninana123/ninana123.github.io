@@ -40,6 +40,10 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 
 	function showModalMini() {
+		if (document.querySelector('.modal')) {
+			hideModal()
+		}
+
 		let div = document.createElement('div');
 		div.classList.add('modal', 'modal__mini');
 
@@ -73,4 +77,72 @@ document.addEventListener('DOMContentLoaded', () => {
 			hideModal();
 		}
 	});
+
+	const login = document.querySelector('.header__login');
+	const registration = document.querySelector('.header__registration');
+
+	login.addEventListener('click', (event) => {
+		showModalLogin();
+	});
+
+	registration.addEventListener('click', (event) => {
+		showModalRegistration();
+	});
+
+	function showModalLogin() {
+		if (document.querySelector('.modal')) {
+			hideModal()
+		}
+
+		let div = document.createElement('div');
+		div.classList.add('modal', 'modal__login');
+
+		document.body.style.overflow = 'hidden';
+
+		div.innerHTML = `
+		<div class="modal__body">
+		<form class="order-form" action="#" method="POST">
+			<h2 class="modal-login__title">Вход:</h2>
+			<input class="order-form__input" type="text" name="name" required placeholder="Ваше имя">
+			<input class="order-form__input" type="password" name="password" required placeholder="Ваш пароль">
+			<button class="btn order-form__btn" data-send>Войти</button>
+		</form>
+	</div>`;
+
+		document.documentElement.append(div);
+
+		document.querySelector('form').addEventListener('submit', (e) => {
+			e.preventDefault();
+			hideModal();
+		});
+	}
+
+	function showModalRegistration() {
+		if (document.querySelector('.modal')) {
+			hideModal()
+		}
+
+		let div = document.createElement('div');
+		div.classList.add('modal', 'modal__registration');
+
+		document.body.style.overflow = 'hidden';
+
+		div.innerHTML = `
+		<div class="modal__body">
+		<form class="order-form" action="#" method="POST">
+			<h2 class="modal-login__title">Регистрация:</h2>
+			<input class="order-form__input" type="text" name="name" required placeholder="Ваше имя">
+			<input class="order-form__input" type="email" name="email" required placeholder="Ваш E-mail">
+			<input class="order-form__input" type="password" name="password" required placeholder="Ваш пароль">
+			<button class="btn order-form__btn" data-send>Зарегистрироваться</button>
+		</form>
+	</div>`;
+
+		document.documentElement.append(div);
+
+		document.querySelector('form').addEventListener('submit', (e) => {
+			e.preventDefault();
+			hideModal();
+		});
+	}
 });
